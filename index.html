@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dream Team App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <header>
+    <h1>Create a dream team!!!   Using the options below, create your all time winning 11</h1>
+
+    <form id="new-item-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="player" class="primary">Player</label>
+          <input type="text" id="player" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="team" class="primary">Team</label>
+          <input type="text" id="team" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="position" class="primary">Position</label>
+          <select id="position">
+            <option value="" disabled selected></option>
+            <option value="Goalkeeper">Goalkeeper</option>
+            <option value="Centre back">Centre back</option>
+            <option value="Left back">Left back</option>
+            <option value="Right back">Right back</option>
+            <option value="Central Midfielder">Central midfielder</option>
+            <option value="Left wing">Left wing</option>
+            <option value="Right wing">Right wing</option>
+            <option value="Centre forward">Centre forward</option>
+          </select>
+        </div>
+
+      </div>
+          <input type="submit" value="Add Player"/>
+
+          <button id="delete-all-button">Clear Team</button>
+    </form>
+
+  </header>
+
+  <body>
+
+    <h1>Your Dream Team</h1>
+    <div id="dream-team">
+
+    </div>
+
+
+
+  </body>
+</html>
